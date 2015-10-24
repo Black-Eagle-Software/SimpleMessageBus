@@ -21,6 +21,7 @@ namespace SimpleMessageBus.Tests {
         [TestMethod]
         [ExpectedException(typeof(ArgumentException))]
         public void MessageTests_SendMessageNoRecipient() {
+            MessageBus.Instance.Clear();
             MessageBus.Instance.SendMessage(new MockMessage());
         }
     }
