@@ -14,8 +14,8 @@ SimpleMessageBus can be used with any C# .Net3.5+ project, but it was specifical
 Using SimpleMessageBus with a Unity project:
 * Import SimpleMessageBus as an Asset into the Unity project (within Unity)
 * Create a message class
-** The message class must inherit from IMessage
-** The message class can take parameters (messageText below) that are passed on to the recipients of the message
+  * The message class must inherit from IMessage
+  * The message class can take parameters (messageText below) that are passed on to the recipients of the message
 ```c#
 using SimpleMessageBus
 
@@ -40,6 +40,7 @@ MessageBus.Instance.Register<SimpleMessageClass>(this, msg => {
 ```c#
 MessageBus.Instance.Send(new SimpleMessageClass("Hello Unity"));
 ```
+* In this case, you should see "Hello Unity" appear in Unity's console window when this message is sent.
 
 ##Credits/Acknowledgements
 * MessageBus use with Unity idea from https://github.com/franciscotufro/message-bus-pattern
