@@ -48,5 +48,6 @@ MessageBus.Instance.Send(new SimpleMessageClass("Hello Unity"));
 * WeakAction class similar to that found in [MVVM Light Framework](http://mvvmlight.codeplex.com/SourceControl/latest#GalaSoft.MvvmLight/GalaSoft.MvvmLight%20%28PCL%29/Helpers/WeakAction.cs)
 * Extension method to check if class implements interface from https://bradhe.wordpress.com/2010/07/27/how-to-tell-if-a-type-implements-an-interface-in-net/
 and also from http://stackoverflow.com/a/5976618
+* Extolling the virtues of the Message Bus concept http://gamasutra.com/blogs/MichaelKissner/20151027/257369/Writing_a_Game_Engine_from_Scratch__Part_1_Messaging.php
 
 
